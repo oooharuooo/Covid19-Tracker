@@ -1,12 +1,15 @@
+import styles from "./App.module.scss";
 
-import './App.css';
+import { Cards, Chart, CountryPicker } from "./components";
 
 function App() {
-  return (
-    <div>
-      fdfd
-    </div>
-  );
+	return (
+		<div className={styles.container}>
+			<Cards />
+			<CountryPicker />
+			<Chart />
+		</div>
+	);
 }
 
 export default App;
