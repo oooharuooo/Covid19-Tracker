@@ -8,3 +8,17 @@ body {
 	justify-content: center;
 	flex-direction: column;
 }
+
+.img {
+	width: 300px;
+	margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+	.container {
+		margin: 0 10%;
+	}
+	.image {
+		widows: 100%;
+	}
+}
