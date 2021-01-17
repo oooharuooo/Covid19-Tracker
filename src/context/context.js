@@ -11,7 +11,7 @@ export const AppProvider = ({ children }) => {
 	const [dailyData, setDailyData] = useState([]);
 	const [countries, setCountries] = useState([]);
 	const [countryPicker, setCountryPicker] = useState("");
-
+	
 	// Fetch Data
 	const fetchData = async () => {
 		let changeableURL = url;
@@ -48,6 +48,7 @@ export const AppProvider = ({ children }) => {
 
 	useEffect(() => {
 		fetchData();
+		// eslint-disable-next-line
 	}, [countryPicker]);
 
 	useEffect(() => {
@@ -65,7 +66,7 @@ export const AppProvider = ({ children }) => {
 			{children}
 		</AppContext.Provider>
 	);
-};
+};;
 
 // Custom hook
 export const useGlobalContext = () => {

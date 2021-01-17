@@ -13,7 +13,7 @@ function CountryPicker() {
 				defaultValue=""
 				onChange={(e) => setCountryPicker(e.target.value)}
 			>
-				<option value="">United States</option>
+				<option value="">Global</option>
 				{countries.map((country, i) => (
 					<option key={i} value={country}>
 						{country}
